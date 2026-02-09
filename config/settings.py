@@ -27,7 +27,7 @@ DEBUG = True
 
 #RECUERDEN QUE EL LINK ES DISTINTO PARA CADA UNO
 ALLOWED_HOSTS = [
-"https://mi-cv-django-waqa.onrender.com",
+"mi-cv-django-waqa.onrender.com",
 "localhost",
  "127.0.0.1",
 ]
@@ -53,7 +53,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
  'django.middleware.security.SecurityMiddleware',
  'whitenoise.middleware.WhiteNoiseMiddleware',
- 
+
  'django.contrib.sessions.middleware.SessionMiddleware',
  'django.middleware.common.CommonMiddleware',
  'django.middleware.csrf.CsrfViewMiddleware',
