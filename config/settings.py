@@ -25,7 +25,14 @@ SECRET_KEY = 'django-insecure-yknj7@+p+8u!i=zwkjre50rhv-i8!+)8wb=iyi+7sn!9kb(7^)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#RECUERDEN QUE EL LINK ES DISTINTO PARA CADA UNO
+ALLOWED_HOSTS = [
+"https://mi-cv-django-waqa.onrender.com",
+"localhost",
+ "127.0.0.1",
+]
+
+
 
 
 # Application definition
@@ -44,13 +51,15 @@ INSTALLED_APPS = [
 
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+ 'django.middleware.security.SecurityMiddleware',
+ 'whitenoise.middleware.WhiteNoiseMiddleware',
+ 
+ 'django.contrib.sessions.middleware.SessionMiddleware',
+ 'django.middleware.common.CommonMiddleware',
+ 'django.middleware.csrf.CsrfViewMiddleware',
+ 'django.contrib.auth.middleware.AuthenticationMiddleware',
+ 'django.contrib.messages.middleware.MessageMiddleware',
+ 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
